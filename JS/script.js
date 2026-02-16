@@ -65,11 +65,11 @@ const handleByCategoryButtonClick = (category, idx) => {
     categoryStyle();
     const singleButton = document.getElementById(`category_btn_${idx}`)
     const singleButtonAll = document.getElementById(`category_btn_all`)
-    
+
     if (singleButton) {
         singleButton.classList.add("categoryStyle");
     }
-    
+
 }
 
 const categoryStyle = () => {
