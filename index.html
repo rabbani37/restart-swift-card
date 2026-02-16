@@ -37,8 +37,14 @@
                 </div>
 
 
-                <div class="navbar-end">
-                    <a class=" text-gray-500 text-2xl"><i class="fa-solid fa-cart-shopping"></i></a>
+                <div class="navbar-end ">
+                    <div class="relative">
+                        <a class=" text-gray-500 text-3xl"><i class="fa-solid fa-cart-shopping"></i>
+                            <span
+                                class="absolute bottom-5 -right-2 rounded-full px-1 bg-blue-600 text-white text-sm">0</span>
+                        </a>
+                    </div>
+
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden text-2xl">
                             <i class="fa-solid fa-outdent "></i>
@@ -200,7 +206,7 @@
 
     <!-- Modal -->
     <section>
-        
+
         <dialog id="product_details" class="modal modal-bottom sm:modal-middle">
             <div class="modal-box">
                 <div id="details_container">
