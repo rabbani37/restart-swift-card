@@ -19,8 +19,8 @@
 
 
     <header>
-        <nav>
-            <div class="navbar bg-base-100 shadow-sm">
+        <nav class="shadow-sm  ">
+            <div class="navbar bg-base-100 container mx-auto">
                 <div class=" navbar-start text-2xl font-bold text-blue-600">
                     <h1>SwiftCart</h1>
                 </div>
@@ -35,10 +35,10 @@
 
 
                 <div class="navbar-end">
-                    <a class=" text-gray-500 text-xl mr-2"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class=" text-gray-500 text-xl"><i class="fa-solid fa-cart-shopping"></i></a>
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden text-xl">
-                           <i class="fa-solid fa-outdent"></i>
+                            <i class="fa-solid fa-outdent"></i>
                         </div>
 
                         <ul tabindex="-1" class="right-4 dropdown-content
@@ -54,6 +54,25 @@
                 </div>
             </div>
         </nav>
+
+        <!-- banner -->
+        <section>
+            <div class="hero min-h-140" style="background-image: url('./Assets/banner-image.png');">
+                <div class="hero-overlay"></div>
+                <div class="text-neutral-content container mx-auto px-5 md:px-0 ">
+
+                    <div>
+                        <h1 class="mb-5 text-5xl font-bold max-w-xl leading-17">Discover Premium <br> Picks Just For You</h1>
+                        <p class="mb-5">
+                             Enjoy seamless shopping,  exclusive deals, and top-quality products in one place. <br>
+                             Explore premium collections carefully selected to match your taste. 
+                        </p>
+                        <button class="btn btn-primary">Shop Now</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </header>
 
 
