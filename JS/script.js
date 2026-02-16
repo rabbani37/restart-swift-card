@@ -62,11 +62,14 @@ const categoryButton = (categories) => {
 
 const handleByCategoryButtonClick = (category, idx) => {
     ourProductsDataLoad(category,);
-    categoryStyle()
+    categoryStyle();
     const singleButton = document.getElementById(`category_btn_${idx}`)
+    const singleButtonAll = document.getElementById(`category_btn_all`)
+    
     if (singleButton) {
         singleButton.classList.add("categoryStyle");
     }
+    
 }
 
 const categoryStyle = () => {
