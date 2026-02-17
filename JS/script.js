@@ -95,11 +95,12 @@ const ourProductDisplay = (products) => {
     ourProductContainer.textContent = ""
     products.forEach(product => {
         const cardDiv = document.createElement('div')
-        cardDiv.innerHTML = `<div class="card bg-base-100  shadow-sm h-full">
+        cardDiv.className='card bg-base-100 shadow-sm h-full md:w-full w-1/2 p-0'
+        cardDiv.innerHTML = `
                     <figure class=" bg-base-200 ">
-                        <img class="w-1/2 h-52 p-3" src=${product.image} alt="" />
+                        <img class=" h-52 p-3" src=${product.image} alt="" />
                     </figure>
-                    <div class="card-body grow ">
+                    <div class="card-body ">
                         <h2 class="card-title mb-0 truncate block ">${product?.title}</h2>
                         <p class="text-xl font-bold">$<span>${product?.price}</span></p>
                         <div class="flex items-center justify-between gap-5 my-3">
@@ -116,7 +117,7 @@ const ourProductDisplay = (products) => {
                             <button class="btn btn-primary w-full"><i class="fa-solid fa-cart-arrow-down"></i> Add</button>
                         </div>
                     </div>
-                </div>
+               
         `;
         ourProductContainer.appendChild(cardDiv);
     })
