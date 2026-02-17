@@ -61,13 +61,15 @@ const categoryButton = (categories) => {
 };
 
 const handleByCategoryButtonClick = (category, idx) => {
+    const allProductBtn = document.getElementById(`category_btn_all`)
     ourProductsDataLoad(category,);
     categoryStyle();
     const singleButton = document.getElementById(`category_btn_${idx}`)
-    const singleButtonAll = document.getElementById(`category_btn_all`)
-
     if (singleButton) {
         singleButton.classList.add("categoryStyle");
+    }
+    else{
+        allProductBtn.classList.add("categoryStyle")
     }
 
 }
@@ -75,7 +77,6 @@ const handleByCategoryButtonClick = (category, idx) => {
 const categoryStyle = () => {
     const allButton = document.querySelectorAll(".category_Btn")
     allButton.forEach(btn => btn.classList.remove("categoryStyle"))
-
 }
 
 const ourProductsDataLoad = async (category = '') => {
