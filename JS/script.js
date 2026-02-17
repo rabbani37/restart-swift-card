@@ -17,7 +17,7 @@ const displayAllProduct = (products) => {
                         <img class="w-1/2 h-52 p-3" src=${product.image} alt="" />
                     </figure>
                     <div class="card-body grow ">
-                        <h2 class="card-title mb-0">${product?.title}</h2>
+                        <h2 class="card-title mb-0 truncate block">${product?.title}</h2>
                         <p class="text-xl font-bold">$<span>${product?.price}</span></p>
                         <div class="flex items-center justify-between gap-5 my-3">
                             <div class="text-blue-700 px-2 rounded-full bg-blue-200 border border-blue-700">
@@ -100,7 +100,7 @@ const ourProductDisplay = (products) => {
                         <img class="w-1/2 h-52 p-3" src=${product.image} alt="" />
                     </figure>
                     <div class="card-body grow ">
-                        <h2 class="card-title mb-0">${product?.title}</h2>
+                        <h2 class="card-title mb-0 truncate block ">${product?.title}</h2>
                         <p class="text-xl font-bold">$<span>${product?.price}</span></p>
                         <div class="flex items-center justify-between gap-5 my-3">
                             <div class="text-blue-700 px-2 rounded-full bg-blue-200 border border-blue-700">
@@ -142,10 +142,10 @@ const displayProductDetails = (product) => {
     const cardDiv = document.createElement("div");
     cardDiv.innerHTML = `<div class="card bg-base-100  shadow-sm h-full">
                     <figure class=" bg-base-200 ">
-                        <img class=" h-60 p-3" src=${product.image} alt="" />
+                        <img class=" h-60 p-3 " src=${product.image} alt="" />
                     </figure>
                     <div class="card-body grow ">
-                        <h2 class="card-title mb-0">${product?.title}</h2>
+                        <h2 class="card-title mb-0 ">${product?.title}</h2>
                         <p><span class="font-semibold">Description: </span>${product.description}</p>
                         <p class="text-xl font-bold"><span class="font-semibold">Price: </span> $<span>${product?.price}</span></p>
                         <div class="flex items-center justify-between gap-5 my-3">
